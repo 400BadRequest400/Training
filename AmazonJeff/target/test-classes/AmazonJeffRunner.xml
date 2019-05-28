@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AmazonJeff Automation Script " parallel="methods" thread-count="4">
+
+    <parameter name="platform" value="mac"/>
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="53.0"/>
+<!--    <parameter name="url" value="https://www.amazon.com"/>-->
+<!--    <parameter name="url" value="https://jqueryui.com/droppable/"/>-->
+<!--    <parameter name="url" value="https://www.online.citibank.co.in/"/>-->
+    <parameter name="url" value="https://the-internet.herokuapp.com/upload"/>
+
+
+    <test name="AmazonJeff Test Home">
+        <classes>
+
+<!--            <class name="regressionTest.AmazonHomePageTest"/>-->
+
+<!--            <class name="regressionTest.IframeClassTest"/>-->
+
+<!--            <class name="regressionTest.NewWindowClassTest"/>-->
+
+<!--            <class name="regressionTest.SecondWindowTest"/>-->
+
+            <class name="regressionTest.UploadFileTest"/>
+
+        </classes>
+    </test>
+</suite>
